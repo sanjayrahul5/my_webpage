@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Booking Portal</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body ><center>
+<style>
+body {
+    background: #34e89e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+</style>   
+<div>
+    <form action="book.php" method="POST">
+        <h2 style="color:white; font-size: 30px;">Booking Form</h2>
+        <br><br>
+
+        <label class="reg_form" for="name">Name :</label>
+        <input type="text" name="name" placeholder="name"><br><br>
+        <label class="reg_form" for="phone">Phone :</label>
+        <input type="text" name="phone" placeholder="phone"><br><br>
+        <label class="reg_form" for="address">Address :</label>
+        <input type="text" name="address" placeholder="address"><br><br>
+        <label class="reg_form" for="route">Route :</label>
+        <select name="route" id="route" value=">
+            <option value="">--- Choose Routes ---</option>
+            <option value="KARUR - CHENNAI">KARUR - CHENNAI</option>
+            <option value="KARUR - BANGALORE" >KARUR - BANGALORE</option>
+            <option value="CHENNAI - BANGALORE">CHENNAI - BANGALORE</option>
+            <option value="CHENNAI - MADURAI">CHENNAI - MADURAI</option>
+            <option value="COIMBATORE - CHENNAI">COIMBATORE - CHENNAI</option>
+            <option value="NAMAKKAL - KANYAKUMARI">NAMAKKAL - KANYAKUMARI</option>
+        </select><br><br><br>
+        <p style="font-size: 25px;">Date</p><input type="date" name="date" placeholder="date"><br><br>
+
+       
+
+<button type="submit" name="insert" value="insert"> Insert</button>
+</form></center>
+
+</body>
+</html>
